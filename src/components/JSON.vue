@@ -120,11 +120,10 @@
     <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
       <p>Highlighting Specific Authors: </p>
-      <p>
-          <highlight v-bind:class="{ 'highlighted-author': author.name === 'George Orwell' }">
-            {{ author.name }}
-          </highlight>
-      </p>
+      <span class="highlight">
+        <!-- Activity 14: Highlight the author "George Orwell" in the list of authors. -->
+         1234
+      </span>
      
 
     </section>
@@ -212,7 +211,7 @@ h1 {
 
 .highlight {
   background-color: #42b883;
-  color: #42b883;
+  color: white;
 }
 
 highlight {
