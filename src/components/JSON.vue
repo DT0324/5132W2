@@ -119,7 +119,13 @@
 
     <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
-      <p>Highlighting Specific Authors: Jiahui Qing</p>
+      <p>Highlighting Specific Authors: </p>
+      <p>
+          <highlight v-bind:class="{ 'highlighted-author': author.name === 'George Orwell' }">
+            {{ author.name }}
+          </highlight>
+      </p>
+     
 
     </section>
   </div>
@@ -157,6 +163,10 @@ const orwell = computed(() => {
 const austen = computed(() => {
   // TODO: CODE TO FIND AUTHOR BY ID HERE
   return authors.find(author => author.id)
+})
+
+const author = computed(() => {
+  return authors.find(author => author.name === 'George Orwell')
 })
 </script>
 
@@ -202,7 +212,14 @@ h1 {
 
 .highlight {
   background-color: #42b883;
+  color: #42b883;
 }
+
+highlight {
+  background-color: #42b883;
+  font-weight: bold;
+}
+
 
 code {
   background-color: #e0e0e0;
