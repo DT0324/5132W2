@@ -101,8 +101,8 @@
       </ul>
       <p>Our #1 seller:</p>
       <ul>
-        <li v-for="book in bookstores.topSellers" :key="book.title">
-          {{ book.title }}
+        <li v-for="book in bookstores.topSellers" :key="book">
+          {{ book }}
         </li>
       </ul>
     </section>
