@@ -122,7 +122,7 @@
       <p>Highlighting Specific Authors: </p>
       <span class="highlight">
         <!-- Activity 14: Highlight the author "George Orwell" in the list of authors. -->
-         1234
+         {{ author.name }}
       </span>
      
 
